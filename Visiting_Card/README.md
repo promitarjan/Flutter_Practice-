@@ -6,9 +6,7 @@ This app displays a profile image, name, designation, contact details, social ic
 
 ## App Screenshot
 
-## App Screenshot
-
-<p align="center">
+<p align="left">
   <img src="lib/screenshot/screenshot.jpg" alt="Digital Business Card Screenshot" width="300"/>
 </p>
 
