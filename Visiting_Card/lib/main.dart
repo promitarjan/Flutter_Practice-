@@ -15,7 +15,7 @@ class DigitalBusinessCardApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
 
-      home: BusinessCardScreen(),
+      home: const BusinessCardScreen(),
     );
   }
 }
