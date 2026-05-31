@@ -30,6 +30,7 @@ class ContactInfoRow extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
                 overflow: TextOverflow.ellipsis,
+                maxLines: 1,
               ),
 
               SizedBox(height: 5),
@@ -40,6 +41,7 @@ class ContactInfoRow extends StatelessWidget {
                   color: const Color.fromARGB(137, 92, 90, 90),
                 ),
                 overflow: TextOverflow.ellipsis,
+                maxLines: 1,
               ),
             ],
           ),
