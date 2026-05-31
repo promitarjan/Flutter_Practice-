@@ -6,7 +6,7 @@ This app displays a profile image, name, designation, contact details, social ic
 
 ## App Screenshot
 
-![Digital Business Card Screenshot](D:/Phone%20Backup/Screenshot_20260601-001004%20(1).jpg)
+![Digital Business Card Screenshot](lib\screenshot\screenshot.jpg)
 
 ## Features
 
