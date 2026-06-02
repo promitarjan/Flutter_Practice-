@@ -18,8 +18,7 @@ class PortfolioApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF2563EB)),
       ),
       debugShowCheckedModeBanner: false,
-
-      home: PortfolioLandingPage(),
+      home: const PortfolioLandingPage(),
     );
   }
 }

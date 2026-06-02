@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'widget/hero_section.dart';
+import 'widget/portfolio_header.dart';
 
 class PortfolioLandingPage extends StatelessWidget {
   const PortfolioLandingPage({super.key});
@@ -9,7 +11,7 @@ class PortfolioLandingPage extends StatelessWidget {
     final Size screenSize = MediaQuery.sizeOf(context);
     final bool isLandscape = orientation == Orientation.landscape;
 
-    final double horizontlPadding = isLandscape ? 40 : 20;
+    final double horizontalPadding = isLandscape ? 40 : 20;
     final double maxContentWidth = isLandscape ? 1000 : screenSize.width;
 
     return Scaffold(
@@ -20,23 +22,17 @@ class PortfolioLandingPage extends StatelessWidget {
               constraints: BoxConstraints(maxWidth: maxContentWidth),
               child: Padding(
                 padding: EdgeInsets.symmetric(
-                  horizontal: horizontlPadding,
+                  horizontal: horizontalPadding,
                   vertical: 24,
                 ),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      "My Portfolio",
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w700,
-                        color: Color(0xFF0F172A),
-                      ),
-                    ),
 
+                  children: [
+                    const PortfolioHeader(header: "My Portfolio"),
                     SizedBox(height: 24),
-                    Text("Step by step will be updated"),
+                    HeroSection(isLandscape: isLandscape),
                   ],
                 ),
               ),
