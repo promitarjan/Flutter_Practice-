@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class PortraitAboutContent extends StatelessWidget {
-  const PortraitAboutContent({super.key});
+class AboutContent extends StatelessWidget {
+  const AboutContent({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Divider(height: 48, thickness: 1, color: Color(0xFFE2E8F0)),
         Row(
           children: [
             Icon(Icons.person, color: Color(0xFF2563EB)),
@@ -31,15 +30,5 @@ class PortraitAboutContent extends StatelessWidget {
         ),
       ],
     );
-  }
-}
-
-class LandscapeAboutContent extends StatelessWidget {
-  const LandscapeAboutContent({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
   }
 }

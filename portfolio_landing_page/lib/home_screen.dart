@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_landing_page/widget/about_section.dart';
+import 'package:portfolio_landing_page/widget/info_section.dart';
 import 'widget/hero_section.dart';
 import 'widget/portfolio_header.dart';
 
@@ -12,8 +12,8 @@ class PortfolioLandingPage extends StatelessWidget {
     final Size screenSize = MediaQuery.sizeOf(context);
     final bool isLandscape = orientation == Orientation.landscape;
 
-    final double horizontalPadding = isLandscape ? 40 : 20;
-    final double maxContentWidth = isLandscape ? 1000 : screenSize.width;
+    final double horizontalPadding = isLandscape ? 20 : 20;
+    final double maxContentWidth = isLandscape ? 1200 : screenSize.width;
 
     return Scaffold(
       body: SafeArea(
@@ -34,7 +34,10 @@ class PortfolioLandingPage extends StatelessWidget {
                     const PortfolioHeader(header: "My Portfolio"),
                     SizedBox(height: 24),
                     HeroSection(isLandscape: isLandscape),
-                    AboutSection(isLandscape: isLandscape),
+                    SizedBox(height: 24),
+                    InfoSection(isLandscape: isLandscape),
+                    SizedBox(height: 30),
+                    last_line(isLandscape: isLandscape),
                   ],
                 ),
               ),
@@ -43,6 +46,29 @@ class PortfolioLandingPage extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class last_line extends StatelessWidget {
+  final bool isLandscape;
+  const last_line({super.key, required this.isLandscape});
+
+  @override
+  Widget build(BuildContext context) {
+    if (isLandscape) {
+      return Center(
+        child: Row(
+          children: [
+            Text(
+              "                                              @2026 Promit Arjan. All Rights Reserved  .  Built With",
+            ),
+            Icon(Icons.heart_broken),
+            Text("using Flutter"),
+          ],
+        ),
+      );
+    }
+    return Text("");
   }
 }
 
