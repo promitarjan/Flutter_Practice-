@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_landing_page/home_screen.dart';
 
 class PortraitHeroContent extends StatelessWidget {
   const PortraitHeroContent({super.key});
@@ -6,7 +7,7 @@ class PortraitHeroContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
-      height: 250,
+      height: 288,
       child: Stack(
         children: [
           Positioned.fill(
@@ -23,7 +24,7 @@ class PortraitHeroContent extends StatelessWidget {
           Positioned(
             top: 10,
             right: -2,
-            bottom: -16,
+            bottom: -50,
             child: _ProfileImage(size: 170),
           ),
         ],
@@ -38,7 +39,7 @@ class LandscapeHeroContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
-      height: 320,
+      height: 340,
       child: Stack(
         children: [
           Positioned.fill(
@@ -128,6 +129,7 @@ class _HeroTextContent extends StatelessWidget {
               height: 1.45,
             ),
           ),
+          HiremeButton(),
         ],
       ),
     );
