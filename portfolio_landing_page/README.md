@@ -1,17 +1,94 @@
-# portfolio_landing_page
+# Personal Portfolio Landing Page
 
-A new Flutter project.
+## Project Overview
 
-## Getting Started
+Personal Portfolio Landing Page is a one-screen Flutter portfolio landing page built as a UI practice project.
 
-This project is a starting point for a Flutter application.
+The project focuses on responsive design, reusable widgets, clean layout structure, asset management, and support for both portrait and landscape orientations.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Responsive hero section
+- About section
+- Skills section
+- Contact section
+- SVG icon support
+- Image asset usage
+- Portrait and landscape layouts
+- Reusable widget components
+- Clean Flutter UI structure
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+<p align="left">
+	<img src="lib/screenshot/screenshot_1.jpg" alt="Portfolio Screenshot 1" width="180"/>
+	<img src="lib/screenshot/screenshot_2.jpg" alt="Portfolio Screenshot 2" width="180"/>
+	<img src="lib/screenshot/screenshot_3.jpg" alt="Portfolio Screenshot 3" width="180"/>
+	<img src="lib/screenshot/screenshot_4.jpg" alt="Portfolio Screenshot 4" width="180"/>
+	<img src="lib/screenshot/screenshot_5.jpg" alt="Portfolio Screenshot 5" width="180"/>
+</p>
+
+## Widgets and Concepts Used
+
+- MaterialApp
+- Scaffold
+- SafeArea
+- SingleChildScrollView
+- Column
+- Row
+- Stack
+- Positioned
+- Expanded
+- Flexible
+- Wrap
+- Table
+- Divider
+- Image.asset
+- SvgPicture.asset
+- Text
+- Container
+- Padding
+- MediaQuery
+
+## Packages Used
+
+- flutter_svg
+
+## Project Structure
+
+```text
+lib/
+lib/widget/
+assets/images/
+assets/icons/
+lib/screenshot/
+```
+
+## Learning Goals
+
+- Responsive Flutter layout
+- Portrait and landscape UI handling
+- Widget composition
+- Reusable component creation
+- Asset and SVG management
+- Overflow handling
+- Clean code organization
+
+## How to Run
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Future Improvements
+
+- Add navigation to contact links
+- Improve breakpoints using LayoutBuilder
+- Add animations
+- Add dark mode
+- Improve widget tests
+
+## Author
+
+Promit Dey Sarker Arjan
