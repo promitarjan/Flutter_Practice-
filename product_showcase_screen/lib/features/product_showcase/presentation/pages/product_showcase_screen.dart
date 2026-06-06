@@ -12,12 +12,13 @@ class ProductShowcaseScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 15),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ProductShowcaseHeader(),
-              SizedBox(height: 24),
-              Expanded(child: gridview()),
+              const ProductShowcaseHeader(),
+              const SizedBox(height: 24),
+              Expanded(child: _buildProductGrid()),
             ],
           ),
         ),
@@ -26,15 +27,24 @@ class ProductShowcaseScreen extends StatelessWidget {
     );
   }
 
-  GridView gridview() {
-    return GridView.count(
-      crossAxisCount: 2,
-      mainAxisSpacing: 5,
-      crossAxisSpacing: 5,
-      childAspectRatio: 0.65,
-      children: productSeedData.map((product) {
-        return ProductCard(product: product);
-      }).toList(),
+  Widget _buildProductGrid() {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final double availableWidth = constraints.maxWidth;
+        final int columnCount = availableWidth >= 700 ? 3 : 2;
+        final double aspectRatio = availableWidth >= 700 ? 1.45 : 0.68;
+
+        return GridView.count(
+          crossAxisCount: columnCount,
+          mainAxisSpacing: 16,
+          crossAxisSpacing: 16,
+          childAspectRatio: aspectRatio,
+          padding: const EdgeInsets.only(bottom: 18),
+          children: productSeedData.map((product) {
+            return ProductCard(product: product);
+          }).toList(),
+        );
+      },
     );
   }
 }
