@@ -30,13 +30,13 @@ A beginner-friendly Flutter practice project for building a modern product showc
 ### Portrait Mode
 
 <p align="left">
-  <img src="lib/screenshot/portrait.jpg" alt="Product Showcase Portrait Screenshot" width="180"/>
+  <img src="lib/screenshots/portrait.jpg" alt="Product Showcase Portrait Screenshot" width="180"/>
 </p>
 
 ### Landscape Mode
 
 <p align="left">
-  <img src="lib/screenshot/landscape.jpg" alt="Product Showcase Landscape Screenshot" width="420"/>
+  <img src="lib/screenshots/landscape.jpg" alt="Product Showcase Landscape Screenshot" width="420"/>
 </p>
 
 ## Project Structure
@@ -96,11 +96,4 @@ assets/
 	flutter analyze
 	```
 
-## What I Learned
 
-- How to build a clean product showcase UI in Flutter
-- How to reuse widgets to keep code organized
-- How to separate UI code using a feature-based structure
-- How to display local images with `Image.asset`
-- How to create responsive layouts for different screen orientations
-- How to make a simple UI look polished with cards, spacing, and icons
